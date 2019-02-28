@@ -1,0 +1,35 @@
+{
+    "name": "muvs",
+    "version": "0.0.0",
+    "description": "library for MuVisionSensor",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "extension.cpp",
+        "extension.ts",
+        "shims.d.ts",
+        "enums.d.ts",
+        "mu_vision_sensor_i2c_hw_interface.cpp",
+        "mu_vision_sensor_i2c_hw_interface.h",
+        "mu_vision_sensor_uart_hw_interface.cpp",
+        "mu_vision_sensor_uart_hw_interface.h",
+        "mu_vision_sensor_i2c_interface.cpp",
+        "mu_vision_sensor_i2c_interface.h",
+        "mu_vision_sensor_uart_interface.cpp",
+        "mu_vision_sensor_uart_interface.h",
+        "mu_vision_sensor_interface.h",
+        "mu_vision_sensor_type.h",
+        "mu_vision_sensor_protocol.c",
+        "mu_vision_sensor_protocol.h",
+        "MuVisionSensor.cpp",
+        "MuVisionSensor.h"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "license": "Apache 2.0"
+}
