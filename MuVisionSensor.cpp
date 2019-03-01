@@ -474,6 +474,7 @@ uint8_t MuVisionSensor::read(MuVisionType vision_type,
 
 uint8_t MuVisionSensor::SensorSetRestart(void) {
 //  MuVsSensorConfig1 sensor_config1;
+  uint8_t reg_restart = 0;
   mu_err_t err;
 //  sensor_config1.restart = 1;
   err = mu_vs_method->Set(kRegRestart, 1);

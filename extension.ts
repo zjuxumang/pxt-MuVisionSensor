@@ -236,7 +236,7 @@ namespace muvs {
     //% shim=muvs::LEDSET
     //% group="设置模块"
     export function LEDSET(id:SENSORS,led_id:LEDS,recg_color:COLOR_TYPE,unrecg_color:COLOR_TYPE,brightness:number) {
-
+        return
     }
     
     //% blockId=MU_VisionBegin block="%id|%enable|算法%type"
@@ -251,14 +251,14 @@ namespace muvs {
     //% shim=muvs::set_level
     //% group="设置模块"
     export function set_level(id:SENSORS,type:VISION_TYPE,level:VisionLevel) {
-
+        return 
     }
     //% blockId=MU_set_zoom block="%id|数码变焦%level"
     //% weight=95
     //% shim=muvs::set_zoom
     //% group="设置模块"
     export function set_zoom(id:SENSORS,level:VisionZoom) {
-
+        return 
     }
     
     //% blockId=MU_set_baudrate block="%id|设置串口波特率%baudrate"
@@ -266,20 +266,20 @@ namespace muvs {
     //% shim=muvs::set_baudrate
     //% group="设置模块"
     export function set_baudrate(id:SENSORS,baud:BaudRate) {
-
+        return 
     }
     //% blockId=MU_set_awb block="%id|设置摄像头白平衡%level"
     //% weight=93
     //% shim=muvs::set_WB
     //% group="设置模块"
     export function set_WB(id:SENSORS,awb:WBMODE) {
-
+        return 
     }
     //% block="%id|高帧率模式$on"
     //% shim=muvs::onOff
     //% on.shadow="toggleOnOff" group="设置模块"
     export function onOff(id:SENSORS,on: boolean) {
-
+        return 
     }
     //% block="%id|检测到%type" color="#2E8B57"
     //% shim=muvs::detected

@@ -44,10 +44,11 @@ class MuVisionSensorI2C: public MuVsI2CMethod {
   */
   virtual uint32_t I2CWrite(uint8_t reg_address, uint8_t value) override;
 
- private:
-  MuVsI2C* i2c_port_ = nullptr;
+  private:
+    MuVsI2C* i2c_port_ = nullptr;
+    MicroBitSerial* uart = nullptr;
 
- protected:
+  protected:
 };
 
 #endif /* ARDUINO_LIB_MUVISIONSENSOR_SRC_MU_VISION_SENSOR_UART_HW_INTERFACE_H_ */

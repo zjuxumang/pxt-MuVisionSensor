@@ -3,8 +3,7 @@
     "version": "0.0.0",
     "description": "library for MuVisionSensor",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",

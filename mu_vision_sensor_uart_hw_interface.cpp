@@ -6,7 +6,6 @@
  */
 
 #include "mu_vision_sensor_uart_hw_interface.h"
-#include "MicroBit.h"
 
 MuVisionSensorUart::MuVisionSensorUart(MuVsUart* uart,
                                        uint32_t address)
