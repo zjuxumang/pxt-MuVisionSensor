@@ -39,9 +39,9 @@ namespace muvs {
         while(mu->SensorSetDefault()!=MU_OK);
     }
     //%
-    void LEDSET(int id,int led_id,int recg_color,int unrecg_color,int brightness) {
+    void set_led(int id,int led, int detected_color, int undetected_color) {
         MuVisionSensor *mu = MU[id];
-        while(mu->LedSetColor(MuVsLed(led_id), MuVsLedColor(recg_color), MuVsLedColor(unrecg_color), brightness) != MU_OK);
+        while(mu->LedSetColor(MuVsLed(led), MuVsLedColor(detected_color), MuVsLedColor(undetected_color), 1) != MU_OK);
     }
     //%
     void set_level(int id, int type,int level){

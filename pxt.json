@@ -26,9 +26,6 @@
         "MuVisionSensor.cpp",
         "MuVisionSensor.h"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
     "public": true,
     "license": "Apache 2.0"
 }

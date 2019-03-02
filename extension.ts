@@ -78,9 +78,27 @@ namespace muvs {
         //% block="🛆 三角形"
         SHAPE_CARD_TRIANGLE
     }
+    export enum LED_COLOR_TYPE {
+        //% block="关"
+        LED_BLACK=0,
+        //% block="红"
+        LED_RED,
+        //% block="绿"
+        LED_GREEN,
+        //% block="蓝"
+        LED_BLUE,
+        //% block="黄"
+        LED_YELLOW,
+        //% block="紫"
+        LED_PURPLE,
+        //% block="青"
+        LED_CYAN,
+        //% block="白"
+        LED_WHITE
+    }
     export enum COLOR_TYPE {
         //% block="黑"
-        BLACK=1,
+        BLACK=0,
         //% block="红"
         RED,
         //% block="绿"
@@ -89,7 +107,7 @@ namespace muvs {
         BLUE,
         //% block="黄"
         YELLOW,
-        //% block="紫""
+        //% block="紫"
         PURPLE,
         //% block="青"
         CYAN,
@@ -201,7 +219,7 @@ namespace muvs {
 
     export enum LEDS {
         //% block="1"
-        LED1,
+        LED1=0,
         //% block="2"
         LED2
     }
@@ -230,12 +248,12 @@ namespace muvs {
         return
     }
     
-    //% block="%id|LED%led_id|识别到颜色%recg_color|未识别到颜色%unrecg_color|亮度(0~15)%brightness"
-    //% brightness.defl=1 brightness.min=0 brightness.max=15
+    //% blockId=MU_set_led block="%id|LED %led|识别到颜色 %detected_color|未识别到颜色 %undetected_color"
+    //% level.defl=1 level.min=0 level.max=15
     //% weight=98 inlineInputMode=inline
-    //% shim=muvs::LEDSET
+    //% shim=muvs::set_led
     //% group="设置模块"
-    export function LEDSET(id:SENSORS,led_id:LEDS,recg_color:COLOR_TYPE,unrecg_color:COLOR_TYPE,brightness:number) {
+    export function set_led(id:SENSORS,led:LEDS,detected_color:LED_COLOR_TYPE,undetected_color:LED_COLOR_TYPE) {
         return
     }
     
