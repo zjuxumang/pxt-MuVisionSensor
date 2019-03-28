@@ -1,5 +1,5 @@
 //% color="#ff6600" weight=20 icon="\uf085"
-namespace muvs {
+namespace Mu视觉传感器 {
     export enum SENSORS {
         //% block="MU00"
         MU00,
