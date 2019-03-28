@@ -347,7 +347,7 @@ namespace Mu视觉传感器 {
     export function get_number_card_type(id:SENSORS,type:NUM_CARD_TYPE):boolean{
         return true
     }
-    //% block="获取%id|算法 颜色检测 颜色 =%color" color="#2E8B57"
+    //% block="获取%id|算法 颜色识别 颜色 =%color" color="#2E8B57"
     //% shim=muvs::get_color_detect
     //% group="运行模块"
     export function get_color_detect(id:SENSORS,color:COLOR_TYPE):boolean{
