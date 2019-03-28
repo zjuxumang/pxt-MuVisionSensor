@@ -3,10 +3,10 @@
 using namespace pxt;
 //% color="#ff6600" weight=20 icon="\uf085"
 namespace muvs {
-    MuVisionSensor Mu0(0x60);
-    MuVisionSensor Mu1(0x61);
-    MuVisionSensor Mu2(0x62);
-    MuVisionSensor Mu3(0x63);
+    MuVisionSensor Mu0(0x50);
+    MuVisionSensor Mu1(0x51);
+    MuVisionSensor Mu2(0x52);
+    MuVisionSensor Mu3(0x53);
     MuVisionSensor* MU[4]={&Mu0,&Mu1,&Mu2,&Mu3};
     MicroBitSerial *serial=nullptr;
     MicroBitI2C *i2c=nullptr; 
