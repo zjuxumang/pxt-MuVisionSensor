@@ -1,6 +1,6 @@
 {
     "name": "Muvs",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Mu视觉传感器扩展库",
     "dependencies": {
         "core": "*"
