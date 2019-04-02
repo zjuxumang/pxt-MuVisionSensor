@@ -99,7 +99,7 @@
   "muvs._VISION_TYPE.VISION_TRAFFIC_CARD_DETECT|block": "🔳 交通卡片",
   "muvs.begin|block": "初始化%id|端口%port",
   "muvs.detected|block": "%id|检测到%type",
-  "muvs.get_color_detect|block": "获取%id|算法 颜色检测 颜色 =%color",
+  "muvs.get_color_recog|block": "获取%id|算法 颜色检测 颜色 =%color",
   "muvs.get_color_value|block": "获取%id|🌈 颜色识别|%item",
   "muvs.get_number_card_type|block": "获取%id|算法🔳 数字卡片 =%type",
   "muvs.get_shape_card_type|block": "获取%id|算法🔳 形状卡片 =%type",

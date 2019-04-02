@@ -348,9 +348,9 @@ namespace muvs {
         return true
     }
     //% block="获取%id|算法 颜色检测 颜色 =%color" color="#2E8B57"
-    //% shim=muvs::get_color_detect
+    //% shim=muvs::get_color_recog
     //% group="运行模块"
-    export function get_color_detect(id:SENSORS,color:COLOR_TYPE):boolean{
+    export function get_color_recog(id:SENSORS,color:COLOR_TYPE):boolean{
         return true
     }
 }

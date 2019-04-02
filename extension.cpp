@@ -129,5 +129,10 @@ namespace muvs {
         MuVisionSensor *mu = MU[id];
         return mu->GetValue(VISION_NUM_CARD_DETECT, kLabel) == label;
     }
+    //%
+    int get_color_recog(int id, int label){
+        MuVisionSensor *mu = MU[id];
+        return mu->GetValue(VISION_COLOR_RECOGNITION, kLabel) == label;
+    }
 
 }
