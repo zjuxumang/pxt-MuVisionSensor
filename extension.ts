@@ -11,10 +11,10 @@ namespace Mu视觉传感器 {
         MU11
     }
     export enum PORT {
-        //% blockId=Port_Serial block="Serial"
-        Serial,
         //% blockId=Port_I2C block="I2C"
-        I2C
+        I2C=1,
+        //% blockId=Port_Serial block="Serial"
+        Serial=0,
     }
     export enum VISION_TYPE {
         //% block="🌈 颜色检测"
@@ -254,7 +254,7 @@ namespace Mu视觉传感器 {
     //% level.defl=1 level.min=0 level.max=15
     //% weight=98 inlineInputMode=inline
     //% shim=muvs::set_led
-    //% group="设置模块"
+    //% group="设置模块" advanced=true
     export function set_led(id:SENSORS,led:LEDS,detected_color:LED_COLOR_TYPE,undetected_color:LED_COLOR_TYPE) {
         return
     }
@@ -269,14 +269,14 @@ namespace Mu视觉传感器 {
     //% blockId=MU_set_level block="%id|设置算法%VISION_TYPE|性能%level"
     //% weight=96
     //% shim=muvs::set_level
-    //% group="设置模块"
+    //% group="设置模块" advanced=true
     export function set_level(id:SENSORS,type:VISION_TYPE,level:VisionLevel) {
         return 
     }
     //% blockId=MU_set_zoom block="%id|数码变焦%level"
     //% weight=95
     //% shim=muvs::set_zoom
-    //% group="设置模块"
+    //% group="设置模块" advanced=true
     export function set_zoom(id:SENSORS,level:VisionZoom) {
         return 
     }
@@ -284,20 +284,20 @@ namespace Mu视觉传感器 {
     //% blockId=MU_set_baudrate block="%id|设置串口波特率%baudrate"
     //% weight=94
     //% shim=muvs::set_baudrate
-    //% group="设置模块"
+    //% group="设置模块" advanced=true
     export function set_baudrate(id:SENSORS,baud:BaudRate) {
         return 
     }
     //% blockId=MU_set_awb block="%id|设置摄像头白平衡%level"
     //% weight=93
     //% shim=muvs::set_WB
-    //% group="设置模块"
+    //% group="设置模块" advanced=true
     export function set_WB(id:SENSORS,awb:WBMODE) {
         return 
     }
     //% block="%id|高帧率模式$on"
     //% shim=muvs::onOff
-    //% on.shadow="toggleOnOff" group="设置模块"
+    //% on.shadow="toggleOnOff" group="设置模块" advanced=true
     export function onOff(id:SENSORS,on: boolean) {
         return 
     }
