@@ -16,6 +16,7 @@
   "Mu视觉传感器.COLOR_TYPE.GREEN|block": "绿",
   "Mu视觉传感器.COLOR_TYPE.PURPLE|block": "紫",
   "Mu视觉传感器.COLOR_TYPE.RED|block": "红",
+  "Mu视觉传感器.COLOR_TYPE.UNKOWN|block": "其他",
   "Mu视觉传感器.COLOR_TYPE.WHITE|block": "白",
   "Mu视觉传感器.COLOR_TYPE.YELLOW|block": "黄",
   "Mu视觉传感器.ColorParams.Blue_channal|block": "蓝色通道",
@@ -99,7 +100,7 @@
   "Mu视觉传感器._VISION_TYPE.VISION_TRAFFIC_CARD_DETECT|block": "🔳 交通卡片",
   "Mu视觉传感器.begin|block": "初始化%id|端口%port",
   "Mu视觉传感器.detected|block": "%id|检测到%type",
-  "Mu视觉传感器.get_color_detect|block": "获取%id|算法 颜色识别 颜色 =%color",
+  "Mu视觉传感器.get_color_recognize|block": "获取%id|算法 颜色识别 颜色 =%color",
   "Mu视觉传感器.get_color_value|block": "获取%id|🌈 颜色识别|%item",
   "Mu视觉传感器.get_number_card_type|block": "获取%id|算法🔳 数字卡片 =%type",
   "Mu视觉传感器.get_shape_card_type|block": "获取%id|算法🔳 形状卡片 =%type",

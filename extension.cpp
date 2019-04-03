@@ -3,16 +3,17 @@
 using namespace pxt;
 //% color="#ff6600" weight=20 icon="\uf085"
 namespace muvs {
-    MuVisionSensor Mu0(0x60);
-    MuVisionSensor Mu1(0x61);
-    MuVisionSensor Mu2(0x62);
-    MuVisionSensor Mu3(0x63);
-    MuVisionSensor* MU[4]={&Mu0,&Mu1,&Mu2,&Mu3};
+    MuVisionSensor *Mu0;
+    MuVisionSensor *Mu1;
+    MuVisionSensor *Mu2;
+    MuVisionSensor *Mu3;
+    MuVisionSensor* MU[4]={Mu0,Mu1,Mu2,Mu3};
     MicroBitSerial *serial=nullptr;
     MicroBitI2C *i2c=nullptr; 
 
     //% 
     void begin(int id, int port){
+        MU[id] = new MuVisionSensor(0x60+id);
         MuVisionSensor *mu = MU[id];
         if(port==0){
             serial=new MicroBitSerial(MICROBIT_PIN_P13,MICROBIT_PIN_P16);
@@ -128,6 +129,11 @@ namespace muvs {
     int get_number_card_type(int id, int label){
         MuVisionSensor *mu = MU[id];
         return mu->GetValue(VISION_NUM_CARD_DETECT, kLabel) == label;
+    }
+    //%
+    int get_color_recognize(int id, int label){
+        MuVisionSensor *mu = MU[id];
+        return mu->GetValue(VISION_COLOR_RECOGNITION, kLabel) == label;
     }
 
 }

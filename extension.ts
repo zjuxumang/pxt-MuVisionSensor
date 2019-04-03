@@ -98,21 +98,23 @@ namespace Mu视觉传感器 {
     }
     export enum COLOR_TYPE {
         //% block="黑"
-        BLACK=0,
+        BLACK=1,
+        //% block="白"
+        WHITE,
         //% block="红"
         RED,
-        //% block="绿"
-        GREEN,
-        //% block="蓝"
-        BLUE,
         //% block="黄"
         YELLOW,
-        //% block="紫"
-        PURPLE,
+        //% block="绿"
+        GREEN,
         //% block="青"
         CYAN,
-        //% block="白"
-        WHITE
+        //% block="蓝"
+        BLUE,
+        //% block="紫"
+        PURPLE,
+        //% block="其他"
+        UNKOWN=0
     }
     export enum NUM_CARD_TYPE {
         //% block="1"
@@ -348,9 +350,9 @@ namespace Mu视觉传感器 {
         return true
     }
     //% block="获取%id|算法 颜色识别 颜色 =%color" color="#2E8B57"
-    //% shim=muvs::get_color_detect
+    //% shim=muvs::get_color_recognize
     //% group="运行模块"
-    export function get_color_detect(id:SENSORS,color:COLOR_TYPE):boolean{
+    export function get_color_recognize(id:SENSORS,color:COLOR_TYPE):boolean{
         return true
     }
 }
