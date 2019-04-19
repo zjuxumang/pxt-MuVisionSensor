@@ -95,7 +95,7 @@ namespace muvs {
         return mu->GetValue(VISION_COLOR_RECOGNITION, kStatus);
     }
     //%
-    int MuVs2GetColorDetectLabel(int id, const int label) {
+    int MuVs2GetColorDetectLabel(int id, int label) {
         MuVisionSensor *mu = MU[id];
         static int label_last = -1;
         if (label_last != label) {
