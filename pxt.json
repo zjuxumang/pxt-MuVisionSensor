@@ -3,7 +3,7 @@
     "version": "0.0.7",
     "description": "Mu视觉传感器扩展库",
     "dependencies": {
-        "core": "*"
+        "core": "file:../core"
     },
     "files": [
         "README.md",
@@ -24,7 +24,9 @@
         "mu_vision_sensor_protocol.c",
         "mu_vision_sensor_protocol.h",
         "MuVisionSensor.cpp",
-        "MuVisionSensor.h"
+        "MuVisionSensor.h",
+        "_locales/zh/Muvs-strings.json",
+        "_locales/zh/Muvs-jsdoc-strings.json"
     ],
     "public": true,
     "license": "Apache 2.0"
