@@ -17,6 +17,7 @@ namespace muvs {
         MuVisionSensor *mu = MU[id];
         if(port==0){
             serial=new MicroBitSerial(MICROBIT_PIN_P13,MICROBIT_PIN_P16);
+            serial->baud(9600);
             mu->begin(serial,kSerialMode);
         }
         else if(port==1)
@@ -59,6 +60,7 @@ namespace muvs {
     void set_baudrate(int id, int baud){
         MuVisionSensor *mu = MU[id];
         while(mu->UartSetBaudrate(MuVsBaudrate(baud)) != MU_OK);
+        serial->baud(9600*pow(2,baud));
     }
     //%
     void set_WB(int id, int wb){

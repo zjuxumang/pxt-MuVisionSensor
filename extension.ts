@@ -233,7 +233,7 @@ namespace MuVisionSensor {
         disable=0
     }
     /**
-     * Help goes here.
+     * Init the sensor.
      */
     //% blockId=mu_init block="Init%id|Interface%port"
     //% weight=100 
