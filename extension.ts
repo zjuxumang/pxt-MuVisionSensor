@@ -280,9 +280,9 @@ namespace MuVisionSensor {
     export function set_zoom(id:SENSORS,level:VisionZoom) {
         return 
     }
-    
-    //% blockId=MU_set_baudrate block="%id|Set Baudrate%baudrate"
-    //% weight=94
+
+    //% blockId=MU_set_baudrate block="%id|Set Baudrate%baud"
+    //% weight=94 inlineInputMode=inline
     //% shim=muvs::set_baudrate
     //% group="Settings" advanced=true
     export function set_baudrate(id:SENSORS,baud:BaudRate) {
@@ -292,7 +292,7 @@ namespace MuVisionSensor {
     //% weight=93
     //% shim=muvs::set_WB
     //% group="Settings" advanced=true
-    export function set_WB(id:SENSORS,awb:WBMODE) {
+    export function set_WB(id:SENSORS,level:WBMODE) {
         return 
     }
     //% block="%id|High FPS mode$on"

@@ -1,6 +1,5 @@
 #include "pxt.h"
 #include "MuVisionSensor.h"
-using namespace pxt;
 //% color="#ff6600" weight=20 icon="\uf085"
 namespace muvs {
     MuVisionSensor *Mu0;
@@ -8,7 +7,6 @@ namespace muvs {
     MuVisionSensor *Mu2;
     MuVisionSensor *Mu3;
     MuVisionSensor* MU[4]={Mu0,Mu1,Mu2,Mu3};
-    MicroBitSerial *serial=nullptr;
     MicroBitI2C *i2c=nullptr; 
 
     //% 
@@ -16,9 +14,7 @@ namespace muvs {
         MU[id] = new MuVisionSensor(0x60+id);
         MuVisionSensor *mu = MU[id];
         if(port==0){
-            serial=new MicroBitSerial(MICROBIT_PIN_P13,MICROBIT_PIN_P16);
-            serial->baud(9600);
-            mu->begin(serial,kSerialMode);
+            mu->begin(&uBit.serial,kSerialMode);
         }
         else if(port==1)
         {
@@ -60,7 +56,6 @@ namespace muvs {
     void set_baudrate(int id, int baud){
         MuVisionSensor *mu = MU[id];
         while(mu->UartSetBaudrate(MuVsBaudrate(baud)) != MU_OK);
-        serial->baud(9600*pow(2,baud));
     }
     //%
     void set_WB(int id, int wb){

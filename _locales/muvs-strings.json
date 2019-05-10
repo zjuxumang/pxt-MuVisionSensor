@@ -109,7 +109,7 @@
   "MuVisionSensor.onOff|block": "%id|High FPS mode$on",
   "MuVisionSensor.reset|block": "%id|Reset to Default",
   "MuVisionSensor.set_WB|block": "%id|Set white balance%level",
-  "MuVisionSensor.set_baudrate|block": "%id|Set Baudrate%baudrate",
+  "MuVisionSensor.set_baudrate|block": "%id|Set Baudrate%baud",
   "MuVisionSensor.set_led|block": "%id|LED %led|when detect %detected_color|when undetect %undetected_color",
   "MuVisionSensor.set_level|block": "%id|Set Algorithm%VISION_TYPE|Level%level",
   "MuVisionSensor.set_zoom|block": "%id|Digital Zoom%level",
