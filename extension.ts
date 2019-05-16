@@ -169,16 +169,16 @@ namespace MuVisionSensor {
         BR_19200,
         //% block="38400"
         BR_38400,
-        //% block="57600"
-        BR_57600,
-        //% block="115200"
-        BR_115200,
-        //% block="230400"
-        BR_230400,
-        //% block="460800"
-        BR_460800,
-        //% block="921600"
-        BR_921600
+        // //% block="57600"
+        // BR_57600,
+        // //% block="115200"
+        // BR_115200,
+        // //% block="230400"
+        // BR_230400,
+        // //% block="460800"
+        // BR_460800,
+        // //% block="921600"
+        // BR_921600
     }
     export enum WBMODE {
         //% block="Auto"
