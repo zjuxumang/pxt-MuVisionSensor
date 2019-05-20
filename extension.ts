@@ -285,6 +285,7 @@ namespace MuVisionSensor {
     //% weight=94 inlineInputMode=inline
     //% shim=muvs::set_baudrate
     //% group="Settings" advanced=true
+    //% deprecated=true
     export function set_baudrate(id:SENSORS,baud:BaudRate) {
         return 
     }

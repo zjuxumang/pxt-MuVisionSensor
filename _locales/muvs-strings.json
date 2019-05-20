@@ -1,11 +1,6 @@
 {
-  "MuVisionSensor.BaudRate.BR_115200|block": "115200",
   "MuVisionSensor.BaudRate.BR_19200|block": "19200",
-  "MuVisionSensor.BaudRate.BR_230400|block": "230400",
   "MuVisionSensor.BaudRate.BR_38400|block": "38400",
-  "MuVisionSensor.BaudRate.BR_460800|block": "460800",
-  "MuVisionSensor.BaudRate.BR_57600|block": "57600",
-  "MuVisionSensor.BaudRate.BR_921600|block": "921600",
   "MuVisionSensor.BaudRate.BR_9600|block": "9600",
   "MuVisionSensor.CARD_TYPE.VISION_NUM_CARD_DETECT|block": "🔳 Number Card",
   "MuVisionSensor.CARD_TYPE.VISION_SHAPE_CARD_DETECT|block": "🔳 Shape Card",
