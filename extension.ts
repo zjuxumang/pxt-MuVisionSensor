@@ -204,13 +204,13 @@ namespace MuVisionSensor {
     }
     export enum ColorParams {
         //% block="red channel"
-        Red_channal=1,
+        Red_channal=6,
         //% block="grenn channel"
-        Green_channal,
+        Green_channal=7,
         //% block="blue channel"
-        Blue_channal,
+        Blue_channal=8,
         //% block="label"
-        LABLE
+        LABLE=5
     }
     export enum DIR {
         //%blockId=DIR_X block="X"
