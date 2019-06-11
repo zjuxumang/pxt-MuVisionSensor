@@ -136,7 +136,7 @@ namespace MuVisionSensor {
         //% block="9"
         NUM_CARD_9,
         //% block="0"
-        NUM_CARD_0,
+        NUM_CARD_0=0,
     }
     export enum VisionLevel {
         //% block="Auto"
@@ -169,16 +169,16 @@ namespace MuVisionSensor {
         BR_19200,
         //% block="38400"
         BR_38400,
-        //% block="57600"
-        BR_57600,
-        //% block="115200"
-        BR_115200,
-        //% block="230400"
-        BR_230400,
-        //% block="460800"
-        BR_460800,
-        //% block="921600"
-        BR_921600
+        // //% block="57600"
+        // BR_57600,
+        // //% block="115200"
+        // BR_115200,
+        // //% block="230400"
+        // BR_230400,
+        // //% block="460800"
+        // BR_460800,
+        // //% block="921600"
+        // BR_921600
     }
     export enum WBMODE {
         //% block="Auto"
@@ -204,13 +204,13 @@ namespace MuVisionSensor {
     }
     export enum ColorParams {
         //% block="red channel"
-        Red_channal=1,
+        Red_channal=6,
         //% block="grenn channel"
-        Green_channal,
+        Green_channal=7,
         //% block="blue channel"
-        Blue_channal,
+        Blue_channal=8,
         //% block="label"
-        LABLE
+        LABLE=5
     }
     export enum DIR {
         //%blockId=DIR_X block="X"
@@ -285,6 +285,7 @@ namespace MuVisionSensor {
     //% weight=94 inlineInputMode=inline
     //% shim=muvs::set_baudrate
     //% group="Settings" advanced=true
+    //% deprecated=true
     export function set_baudrate(id:SENSORS,baud:BaudRate) {
         return 
     }

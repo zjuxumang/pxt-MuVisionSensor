@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "Mu视觉传感器.BaudRate.BR_115200|block": "115200",
   "Mu视觉传感器.BaudRate.BR_19200|block": "19200",
   "Mu视觉传感器.BaudRate.BR_230400|block": "230400",
@@ -116,15 +115,10 @@
   "Mu视觉传感器|block": "Mu视觉传感器",
   "{id:category}Mu视觉传感器": "Mu视觉传感器",
   "{id:group}设置模块": "设置模块",
-  "{id:group}运行模块": "运行模块"
-=======
+  "{id:group}运行模块": "运行模块",
   "MuVisionSensor.BaudRate.BR_115200|block": "115200",
   "MuVisionSensor.BaudRate.BR_19200|block": "19200",
-  "MuVisionSensor.BaudRate.BR_230400|block": "230400",
   "MuVisionSensor.BaudRate.BR_38400|block": "38400",
-  "MuVisionSensor.BaudRate.BR_460800|block": "460800",
-  "MuVisionSensor.BaudRate.BR_57600|block": "57600",
-  "MuVisionSensor.BaudRate.BR_921600|block": "921600",
   "MuVisionSensor.BaudRate.BR_9600|block": "9600",
   "MuVisionSensor.CARD_TYPE.VISION_NUM_CARD_DETECT|block": "🔳 Number Card",
   "MuVisionSensor.CARD_TYPE.VISION_SHAPE_CARD_DETECT|block": "🔳 Shape Card",
@@ -236,5 +230,4 @@
   "{id:category}MuVisionSensor": "MuVisionSensor",
   "{id:group}Functions": "Functions",
   "{id:group}Settings": "Settings"
->>>>>>> d3ade5a1a929a7912d850273dfc194a7965e03db
 }
