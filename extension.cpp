@@ -1,22 +1,20 @@
 #include "pxt.h"
 #include "MuVisionSensor.h"
-using namespace pxt;
 //% color="#ff6600" weight=20 icon="\uf085"
 namespace muvs {
-    MuVisionSensor Mu0(0x60);
-    MuVisionSensor Mu1(0x61);
-    MuVisionSensor Mu2(0x62);
-    MuVisionSensor Mu3(0x63);
-    MuVisionSensor* MU[4]={&Mu0,&Mu1,&Mu2,&Mu3};
-    MicroBitSerial *serial=nullptr;
+    MuVisionSensor *Mu0;
+    MuVisionSensor *Mu1;
+    MuVisionSensor *Mu2;
+    MuVisionSensor *Mu3;
+    MuVisionSensor* MU[4]={Mu0,Mu1,Mu2,Mu3};
     MicroBitI2C *i2c=nullptr; 
 
     //% 
     void begin(int id, int port){
+        MU[id] = new MuVisionSensor(0x60+id);
         MuVisionSensor *mu = MU[id];
         if(port==0){
-            serial=new MicroBitSerial(MICROBIT_PIN_P13,MICROBIT_PIN_P16);
-            mu->begin(serial,kSerialMode);
+            mu->begin(&uBit.serial,kSerialMode);
         }
         else if(port==1)
         {
@@ -94,7 +92,7 @@ namespace muvs {
         return mu->GetValue(VISION_COLOR_RECOGNITION, kStatus);
     }
     //%
-    int MuVs2GetColorDetectLabel(int id, const int label) {
+    int MuVs2GetColorDetectLabel(int id, int label) {
         MuVisionSensor *mu = MU[id];
         static int label_last = -1;
         if (label_last != label) {
@@ -130,7 +128,7 @@ namespace muvs {
         return mu->GetValue(VISION_NUM_CARD_DETECT, kLabel) == label;
     }
     //%
-    int get_color_recog(int id, int label){
+    int get_color_recognize(int id, int label){
         MuVisionSensor *mu = MU[id];
         return mu->GetValue(VISION_COLOR_RECOGNITION, kLabel) == label;
     }
