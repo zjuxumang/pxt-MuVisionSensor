@@ -1,7 +1,7 @@
 {
-    "name": "Muvs",
+    "name": "MUVS",
     "version": "0.1.6",
-    "description": "micro:bit extensions for MuVisionSensor\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nMu视觉传感器扩展库",
+    "description": "micro:bit extensions for MUVisionSensor\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nMU视觉传感器扩展库",
     "dependencies": {
         "core": "*"
     },
@@ -25,8 +25,8 @@
         "mu_vision_sensor_protocol.h",
         "MuVisionSensor.cpp",
         "MuVisionSensor.h",
-        "_locales/zh/Muvs-strings.json",
-        "_locales/zh/Muvs-jsdoc-strings.json"
+        "_locales/zh/MUVS-strings.json",
+        "_locales/zh/MUVS-jsdoc-strings.json"
     ],
     "public": true,
     "license": "Apache 2.0"

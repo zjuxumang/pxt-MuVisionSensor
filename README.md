@@ -1,6 +1,6 @@
-# Mu视觉传感器
+# MU视觉传感器
 - beta
-- MuVisionSensor扩展库
+- MUVisionSensor扩展库
 
 ## License
 
