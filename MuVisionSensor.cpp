@@ -8,7 +8,6 @@
 #include "MuVisionSensor.h"
 #include "mu_vision_sensor_uart_hw_interface.h"
 #include "mu_vision_sensor_i2c_hw_interface.h"
-#include <Arduino.h>
 
 MuVisionSensor::MuVisionSensor(uint32_t address)
     : address_(address) {
@@ -67,7 +66,7 @@ uint8_t MuVisionSensor::VisionBegin(MuVisionType vision_type) {
   mu_err_t err;
   err = VisionSetStatus(vision_type, true);
   if (err) return err;
-  delay(20);          // FIXME waiting for vision to initialize, may delete in later version
+  wait_ms(20);          // FIXME waiting for vision to initialize, may delete in later version
   err = VisionSetOutputMode(kCallBackMode);
   if (err) return err;
   return MU_OK;
@@ -508,7 +507,7 @@ uint8_t MuVisionSensor::CameraSetAwb(MuVsCameraWhiteBalance awb) {
     err = mu_vs_method->Set(kRegCameraConfig1, camera_config1.camera_reg_value);
     // waiting for lock white balance
     if (awb == kLockWhiteBalance) {
-      delay(1000);
+      wait_ms(1000);
     }
   }
   return err;
