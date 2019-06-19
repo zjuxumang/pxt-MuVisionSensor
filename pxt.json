@@ -1,5 +1,5 @@
 {
-    "name": "MUVS",
+    "name": "MUVisionSensor",
     "version": "0.1.7",
     "description": "micro:bit extensions for MUVisionSensor\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nMU视觉传感器扩展库",
     "dependencies": {
