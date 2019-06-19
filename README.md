@@ -1,4 +1,4 @@
-# MU视觉传感器
+# MUVS
 - beta
 - MUVisionSensor扩展库
 
