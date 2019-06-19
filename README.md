@@ -1,5 +1,5 @@
 # MUVS
-- beta
+
 - MUVisionSensor扩展库
 
 ## License
