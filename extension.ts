@@ -85,10 +85,10 @@ namespace MUVisionSensor {
         LED_RED,
         //% block="green"
         LED_GREEN,
-        //% block="blue"
-        LED_BLUE,
         //% block="yellow"
         LED_YELLOW,
+        //% block="blue"
+        LED_BLUE,
         //% block="purple"
         LED_PURPLE,
         //% block="cayan"
